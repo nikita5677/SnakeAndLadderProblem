@@ -10,7 +10,7 @@ namespace SnakeAndLadderProblem
     {
         static void Main(string[] args)
         {
-            UC6Report.Report();
+            UC7TwoPlayer.TwoPlayer();
             Console.ReadLine();
         }
     }
