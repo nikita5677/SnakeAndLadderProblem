@@ -10,7 +10,7 @@ namespace SnakeAndLadderProblem
     {
         static void Main(string[] args)
         {
-            UC1Position.Position();
+            UC2Roll.Position();
             Console.ReadLine();
         }
     }
