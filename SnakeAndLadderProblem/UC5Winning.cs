@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SnakeAndLadderProblem
 {
-    class UC4Repeat
+    class UC5Winning
     {
-        public static void Repeat()
+        public static void Winning()
         {
             int position = 0;
             int current_position = 0;
