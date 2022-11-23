@@ -10,7 +10,7 @@ namespace SnakeAndLadderProblem
     {
         static void Main(string[] args)
         {
-            UC3NoPlay.NoPlay();
+            UC4Repeat.Repeat();
             Console.ReadLine();
         }
     }

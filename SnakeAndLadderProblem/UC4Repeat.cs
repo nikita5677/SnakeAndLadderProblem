@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SnakeAndLadderProblem
 {
-    class UC3NoPlay
+    class UC4Repeat
     {
-        public static void NoPlay()
+        public static void Repeat()
         {
             int position = 0;
             int current_position = 0;
@@ -21,29 +21,31 @@ namespace SnakeAndLadderProblem
             while (position < Winning)
             {
                 int random = r.Next(1, 7);
-                int opt = r.Next(0, 3);
-                switch (opt)
+                int option = r.Next(0, 3);
+                switch (option)
                 {
                     case NoPlay:
                         Console.WriteLine("You Got No Play");
-                        Console.WriteLine("--------------------------");
+                        Console.WriteLine("-------");
                         break;
+
                     case Ladder:
                         position = current_position;
                         if (position < Winning)
                         {
                             current_position = current_position + random;
-                            Console.WriteLine("Player Climbed Ladder By:" + random);
+                            Console.WriteLine("Player Ladder By:" + random);
                             if (current_position > Winning)
                             {
                                 current_position = position;
                             }
                         }
                         break;
+
                     case Snake:
                         if (current_position > 0)
                         {
-                            Console.WriteLine("Player Is Bitten By Snake By:" + random);
+                            Console.WriteLine("Player Snake By:" + random);
                             current_position = current_position - random;
                         }
                         else if (current_position <= 0)
@@ -54,7 +56,8 @@ namespace SnakeAndLadderProblem
                         break;
                 }
             }
-
+            Console.WriteLine("You are the Final Position Is:" + position);
+            Console.ReadLine();
         }
     }
 }
